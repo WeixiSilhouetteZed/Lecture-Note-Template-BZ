@@ -1,0 +1,86 @@
+%%General Setup
+\textwidth=464pt
+\textheight=626pt
+\voffset= -80pt
+\headsep= 15pt
+
+
+\usepackage[utf8]{inputenc}	% Para caracteres en español
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+\usepackage{multirow,booktabs}
+\usepackage[table]{xcolor}
+\usepackage{fullpage}
+\usepackage{lastpage}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{mathrsfs}
+\usepackage{wrapfig}
+\usepackage{setspace}
+\usepackage{calc}
+\usepackage{multicol}
+\usepackage{cancel}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage[margin=3cm]{geometry}
+\usepackage{amsmath}
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\usepackage{empheq}
+\usepackage{framed}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{xcolor}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}
+\newtheorem{thm}{Definition}
+\newtheorem{reg}{Rule}
+\newtheorem{exer}{Exercise}
+\newtheorem{note}{Note}
+\newcounter{lecnum}
+
+%%Header
+\newcommand{\lecture}[5]{
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength\headheight{120.0pt}
+\addtolength{\textheight}{-80.0pt}
+\chead{\includegraphics[width=\textwidth,height=18.0mm]{Pigeonhole.png}}
+   \pagestyle{fancy}
+   \begin{center}
+   \setcounter{lecnum}{#3}
+   \setcounter{page}{1}
+   \framebox{
+      \vbox{\vspace{2mm}
+    \hbox to 6.28in { {\bf UW #1
+	\hfill #2} }
+       \vspace{4mm}
+       \hbox to 6.28in { {\Large \hfill Lecture #3: #4  \hfill} }
+       \vspace{2mm}
+       \hbox to 6.28in { {\it Professor: #5 \hfill Date: \today} }
+      \vspace{2mm}}
+   }
+   \end{center}
+   \textbf{}\\
+}
+
+
+%%Algorithm Section
+% This section covers pseudo code generation
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+
+%%Quantum Section
+% This section can cover all differential operators and linear algebra related keywords
+\usepackage{physics}
+
+%%Graph & Data Section
+% This section covers data visualization 
+\usepackage{bytefield}
+\usepackage{qcircuit}
+%%Statistics Section
